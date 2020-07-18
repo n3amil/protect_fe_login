@@ -1,6 +1,6 @@
 {
     "name": "neamil/protect_fe_login",
-    "description": "this typo3 extension provides brute force protection for fel_login with device cookies as described in OWASP https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies",
+    "description": "this typo3 extension provides brute force protection for frontend login with device cookies as described in OWASP https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies",
     "type": "typo3-cms-extension",
     "require": {
         "neamil/device_cookies": "^1.0",
