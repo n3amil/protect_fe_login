@@ -5,7 +5,7 @@ defined('TYPO3_MODE') or die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addService(
     $_EXTKEY,
     'auth',
-    \Neamil\SecureFeLogin\Service\AuthenticationService::class,
+    \Neamil\ProtectFeLogin\Service\AuthenticationService::class,
     array(
         'title' => 'secure frontend login with device cookies (brut force protection)',
         'description' => 'felogin protection with device cookies',
@@ -15,6 +15,6 @@ defined('TYPO3_MODE') or die();
         'quality' => 90,
         'os' => '',
         'exec' => '',
-        'className' => \Neamil\SecureFeLogin\Service\AuthenticationService::class
+        'className' => \Neamil\ProtectFeLogin\Service\AuthenticationService::class
     )
 );

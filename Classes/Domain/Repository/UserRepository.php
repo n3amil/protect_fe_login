@@ -11,7 +11,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class UserRepository implements UserRepositoryInterface
 {
-    protected const TABLE = 'tx_securefelogin_user';
+    protected const TABLE = 'tx_protectfelogin_user';
 
     public function createUserByName(string $username): User
     {

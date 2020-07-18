@@ -1,7 +1,7 @@
 <?php
 
 
-namespace  Neamil\ProtectFeLogin\Domain\Repository;;
+namespace  Neamil\ProtectFeLogin\Domain\Repository;
 
 
 use Neamil\DeviceCookies\LockedOutDeviceCookieRepositoryInterface;
@@ -12,7 +12,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class LockedOutDeviceCookieRepository implements LockedOutDeviceCookieRepositoryInterface
 {
-    protected const TABLE = 'tx_securefelogin_cookie_lockout';
+    protected const TABLE = 'tx_protectfelogin_cookie_lockout';
 
 
     public function isCookieLockedOut($cookie): bool

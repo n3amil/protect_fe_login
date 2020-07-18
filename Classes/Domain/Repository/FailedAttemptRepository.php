@@ -13,16 +13,17 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class FailedAttemptRepository implements FailedAttemptRepositoryInterface
 {
 
-    protected const TABLE = 'tx_securefelogin_failed_attempts';
+    protected const TABLE = 'tx_protectfelogin_failed_attempts';
 
     /**
      * @param FailedAttempt $failedAttempt
      */
-    public function storeFailedAttempt(FailedAttempt $failedAttempt): void
+    public function storeFailedAttempt(FailedAttempt $failedAttempt): bool
     {
+        $storedSuccessfully = false;
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
             ->getQueryBuilderForTable(self::TABLE);
-        $queryBuilder->insert(self::TABLE)
+        $affectedRows = (int)$queryBuilder->insert(self::TABLE)
             ->values([
                     'user_id' => $failedAttempt->getUser(),
                     'tstamp' => $failedAttempt->getTime(),
@@ -30,6 +31,10 @@ class FailedAttemptRepository implements FailedAttemptRepositoryInterface
                 ]
             )
             ->execute();
+        if ($affectedRows === 1){
+            $storedSuccessfully = true;
+        }
+        return $storedSuccessfully;
     }
 
     public function countFailedAttemptsOfDeviceCookie($deviceCookie, $getTimePeriod): int

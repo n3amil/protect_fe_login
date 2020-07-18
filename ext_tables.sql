@@ -1,4 +1,4 @@
-CREATE TABLE tx_securefelogin_failed_attempts
+CREATE TABLE tx_protectfelogin_failed_attempts
 (
     `attempt_id`    bigint(20)           NOT NULL AUTO_INCREMENT,
     `user_id`       bigint(20)           NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE tx_securefelogin_failed_attempts
 
 ) ENGINE = InnoDB;
 
-CREATE TABLE tx_securefelogin_cookie_lockout
+CREATE TABLE tx_protectfelogin_cookie_lockout
 (
     `lockout_id`    bigint(20)           NOT NULL AUTO_INCREMENT,
     `device_cookie` longtext DEFAULT NULL COMMENT 'device cookie',
@@ -16,7 +16,7 @@ CREATE TABLE tx_securefelogin_cookie_lockout
     PRIMARY KEY (lockout_id)
 ) ENGINE = InnoDB;
 
-CREATE TABLE tx_securefelogin_user
+CREATE TABLE tx_protectfelogin_user
 (
     `user_id`                         bigint(20)          NOT NULL AUTO_INCREMENT,
     `user_name`                       varchar(255)        NOT NULL,
