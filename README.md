@@ -17,7 +17,7 @@ Alternatively, you can install the extension from TER:
 
 After that, proceed with [Getting Started](#getting-started)
 
-##Getting Started
+## Getting Started
 - install via TER or composer
 - configure needed extension settings
 
@@ -27,11 +27,11 @@ After that, proceed with [Getting Started](#getting-started)
    - DeviceCookieExpireInDays = count of days until the device cookie expires
    - Secret = secret cryptographic key used for hash_hmac. Use a key with at least 512 bit entropy, generate it with the key/password generator of your choice. Dont use it anywhere else and keep it safe!
 
-#FAQ
+# FAQ
 ## don't we already have extensions which protect from brute force attacks?
 there are several extensions e.g. login_limit, secure_login or felogin_bruteforce_protection.
 Those provide a simple time/ip ban for login attempts, with downsides for a lot of use cases:
-###simple time lockout after n attempts
+### simple time lockout after n attempts
 - DoS for user account
 ### time logout for ip after n attempts (that's what most of the named extensions do)
 - not suitable versus large distribution attacks (bot networks etc.)
