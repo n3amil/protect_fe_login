@@ -1,5 +1,5 @@
-# Secure FE Logins
-this typo3 extension secures fe_login against brute force attacks as described in
+# Protect FE Logins
+this typo3 extension protects fe_login against brute force attacks as described in
 OWASP https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
 
 Current State - Alpha!
@@ -9,11 +9,11 @@ dont use in production yet.
 
 This TYPO3 extension is available via packagist:
 
-```composer require n3amil/secure_fe_login```
+```composer require n3amil/protect_fe_login```
 
 Alternatively, you can install the extension from TER:
 
-[TER: secure_fe_login](https://typo3.org/extensions/repository/view/secure_fe_login)
+[TER: protect_fe_login](https://typo3.org/extensions/repository/view/protect_fe_login)
 
 After that, proceed with [Getting Started](#getting-started)
 

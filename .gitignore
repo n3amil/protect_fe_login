@@ -4,3 +4,4 @@ vendor
 .ddev
 /var/
 /.Build
+/composer.lock

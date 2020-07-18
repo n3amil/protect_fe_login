@@ -1,7 +1,7 @@
 <?php
 
 
-namespace  Neamil\SecureFeLogin\Domain\Repository;
+namespace  Neamil\ProtectFeLogin\Domain\Repository;
 
 
 use Neamil\DeviceCookies\Models\User;

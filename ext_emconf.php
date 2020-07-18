@@ -1,6 +1,6 @@
 <?php
 $EM_CONF[$_EXTKEY] = array(
-    'title'                         => 'Secure Frontend Login',
+    'title'                         => 'Protect Frontend Login',
     'description'                   => 'this typo3 extension provides brute force protection for fel_login with device cookies as described in OWASP https://www.owasp.org/index.php/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies',
     'category'                      => 'services',
     'author'                        => 'Johannes Seipelt',

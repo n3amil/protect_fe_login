@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Neamil\SecureFeLogin\Service;
+namespace Neamil\ProtectFeLogin\Service;
 
 use Exception;
 use TYPO3\CMS\Core\Authentication\AuthenticationService as BaseAuthenticationService;
