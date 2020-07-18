@@ -33,11 +33,11 @@ class AuthenticationService extends BaseAuthenticationService
         $cookieUser = false;
         $username = (string)$this->login['uname'];
         $settings = new Settings(
-            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['secure_fe_login']['timeout'],
-            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['secure_fe_login']['maxAttempts'],
-            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['secure_fe_login']['deviceCookieName'],
-            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['secure_fe_login']['deviceCookieExpireInDays'],
-            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['secure_fe_login']['secret']
+            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['protect_fe_login']['timeout'],
+            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['protect_fe_login']['maxAttempts'],
+            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['protect_fe_login']['deviceCookieName'],
+            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['protect_fe_login']['deviceCookieExpireInDays'],
+            $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['protect_fe_login']['secret']
         );
 
         $userRepository = new UserRepository();
