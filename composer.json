@@ -1,0 +1,53 @@
+{
+    "name": "neamil/protect_fe_login",
+    "description": "this typo3 extension provides brute force protection for fel_login with device cookies as described in OWASP https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies",
+    "type": "typo3-cms-extension",
+    "require": {
+        "neamil/device_cookies": "^1.0",
+        "typo3/cms-core": "^9",
+        "ext-pdo": "*"
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johannes Seipelt",
+            "email": "johannes.seipelt@3m5.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Neamil\\SecureFeLogin\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neamil\\SecureFeLogin\\": "Tests"
+        }
+    },
+    "require-dev": {
+		"roave/security-advisories": "dev-master"
+		,
+		"nimut/typo3-complete": "^9",
+        "typo3/cms-introduction": "^3"
+    },
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "news",
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web"
+		}
+	},
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"bruteforce",
+		"protection",
+		"fe_login",
+		"device cookies",
+		"felogin"
+	]
+}

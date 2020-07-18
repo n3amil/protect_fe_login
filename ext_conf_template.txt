@@ -1,0 +1,10 @@
+# cat=Settings; type=integer; label=Timeout: time in seconds how long the lock-out for untrusted users / device cookies
+timeout = 300
+# cat=Settings; type=integer; label=Maximum of attempts:  how many attempts for untrusted user or attempts with a single device cookie can be made until the untrusted users for the username, or the device cookie gets locked out
+maxAttempts = 5
+# cat=Settings; type=string; label=Name for the device cookie:  the name of the device cookie which is set for the client, choose something unique e.g contain the website name
+deviceCookieName =
+# cat=Settings; type=integer; label=Device cookie expire in days: count of days until the device cookie expires
+deviceCookieExpireInDays = 365
+# cat=Settings; type=string; label=Secret: secret cryptographic key used for hash_hmac. Use a key with at least 512 bit entropy, generate it with the key/password generator of your choice. Dont use it anywhere else and keep it safe!
+secret =
