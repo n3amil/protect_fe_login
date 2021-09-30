@@ -2,7 +2,7 @@
 this typo3 extension protects fe_login against brute force attacks as described in
 OWASP https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
 
-Current State - Alpha!
+Current State - Beta!
 dont use in production yet.
 
 ## Installation
