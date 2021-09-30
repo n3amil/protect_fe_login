@@ -42,7 +42,7 @@
 		"prepare-release": [
 			"rm .gitignore",
 			"rm -rf .github",
-			"rm .editorconfig",
+			"rm .editorconfig"
 		]
 	},
 	"extra": {
