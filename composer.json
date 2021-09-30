@@ -38,6 +38,11 @@
 	"scripts": {
 		"post-autoload-dump": [
 			"TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+		],
+		"prepare-release": [
+			"rm .gitignore",
+			"rm -rf .github",
+			"rm .editorconfig",
 		]
 	},
 	"extra": {
